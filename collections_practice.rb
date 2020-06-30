@@ -80,7 +80,6 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |word, idx|
-  array.each_with_index do |word, idx|
     if idx == 1 
       word
     else 
