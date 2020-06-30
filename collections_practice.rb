@@ -50,11 +50,11 @@ def reverse_array(arr_int)
   arr_int.reverse
 end
 
-def kesha_maker(str) 
-  str.each do |word| 
-    word[2] = "$"
-  end
-end
+# def kesha_maker(array)
+#   array.each do |word|
+#     word[2] << "$"
+#   end
+# end
 
 # def kesha_maker(str) 
 # new_arr = [] 
@@ -80,6 +80,7 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |word, idx|
+  array.each_with_index do |word, idx|
     if idx == 1 
       word
     else 
